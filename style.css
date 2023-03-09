@@ -1,0 +1,80 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #6c757d;
+    background-image: linear-gradient (to bottom right,rgb(211, 16, 211),rgb(25, 192, 221));
+}
+
+.kalkulator{
+    margin: 25px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+    min-height: 80vh;
+    
+}
+
+.wynik{
+    grid-column: 1/-1;
+    background-color: #333533;
+    justify-content: right;
+    word-wrap: break-word;
+    word-break: break-all;
+    
+}
+
+#dzialanie_stare{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    opacity: 70%;
+
+    text-align: right;
+    
+}
+
+#dzialanie{
+    font-size: 45px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    
+    text-align: right;
+    
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #333533;
+    background-color: #1f1f1d;
+}
+
+button:hover{
+    background-color: rgba(36, 36, 35, .9);
+}
+
+#wyczysc{
+    grid-column: span 2;
+}
+
+#rownasie{
+    grid-column: span 3;
+}
+
+.tytul{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
